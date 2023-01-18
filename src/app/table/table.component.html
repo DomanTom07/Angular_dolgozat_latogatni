@@ -1,0 +1,30 @@
+<!--
+File: table.component.html
+Author: Tamás Domán
+Copyright: 2023, Tamás Domán
+Group: Szoft II N
+Date: 2023-01-18
+Github: https://github.com/DomanTom07/
+Licenc: GNU GPL
+-->
+
+<h2 class="mt-2 mb-3">0104 Feladat megoldás: Helyszínek</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Név</th>
+            <th>Megye</th>
+            <th>Terület (km²)</th>
+            <th>Népesség (fő)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let location of locations">
+            <td>{{location.name}}</td>
+            <td>{{location.county}}</td>
+            <td>{{location.area}}</td>
+            <td>{{location.population}}</td>
+        </tr>
+    </tbody>
+</table>
